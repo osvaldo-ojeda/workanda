@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2f3237;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+
+  width: 100vw;
+}
+header > h1 {
+  width: 100vw;
+  padding-top: 20px;
+  text-align: center;
+  color: #cf03df;
+
+}
+header > nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  width: 100vw;
+
+}
+header > nav > a,
+header > nav > span {
+
+  text-decoration: none;
+  color: rgb(209, 209, 211);
+
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+main > h2 {
+  color: #f77eff;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 400px;
+  width: 350px;
+}
+form > div > label {
+  color: rgb(209, 209, 211);
+}
+form > input {
+  width: 100%;
+  height: 35px;
+  padding-left: 12px;
+  border: none;
+  color: rgb(209, 209, 211);
+  font-size: 20px;
+  border-bottom: 2px solid #5865f2;
+  background-color: transparent;
+}
+.dangerSpan{
+  color: crimson;
+  display: inline-block;
+}
+.noDangerSpan{
+  display: none;
+}
+::placeholder {
+  color: rgb(209, 209, 211);
+  font-size: 20px;
+}
+form>div{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+form>div>label{
+  margin-right: 10px;
+}
+form >div > a {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+/* ------ */
+.card_container {
+  display: flex;
+  max-width: 1280px;
+
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 320px;
+  min-height: 350px;
+  border-radius: 10px;
+  background-color:#242124;
+  margin: 20px;
+  padding-bottom: 10px;
+}
+.card > img {
+  width: 320px;
+  height: 210px;
+  padding: 10px;
+  border-radius: 22px;
+}
+.card > h3,
+.card > h4,
+.card > a,
+.card > p {
+  color: rgb(209, 209, 211);
+  padding: 7px 12px;
+}
+.card > .delete,
+.card > p {
+  color: rgb(254, 0, 0);
+}
+.card > .update {
+  color: rgb(0, 199, 254);
+}
+/* ------ */
+button {
+  height: 30px;
+  width: 300px;
+  font-size: 20px;
+  color: rgb(209, 209, 211);
+  background-color: #5865f2;
+  border: none;
+  border-radius: 5px;
+}
+footer {
+  height: 100px;
+  width: 100vw;
+  padding-top: 40px;
+  text-align: center;
+
+}
